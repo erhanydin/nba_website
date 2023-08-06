@@ -1,37 +1,837 @@
+body {
+  background-color: #1a1a1a;
+  height: 100%;
+}
+
+
 .App {
   text-align: center;
+  background-color: #1a1a1a;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2vh;
+}
+
+.main-logo-container {
+  width: 30vw;
+  text-align: left;
+}
+
+.role1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.nba-logo {
+  height: 10vmin;
+  pointer-events: none;
+
+}
+
+.button-container {
+  width: 60vh;
+}
+
+.button-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.buttons {
+  text-decoration: none;
+}
+
+#admin-panel {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button-container li {
+  list-style: none;
+}
+
+.button-container a {
+  font-size: large;
+  color: white;
+}
+
+.button-container a:hover {
+  font-size: large;
+  color: #2962ff;
+  transition: 1 s;
+}
+
+
+
+
+.games-logo {
+  color: White;
+  font-size: 32px;
+}
+
+.games-date {
+  color: white;
+  font-size: 20px;
+
+}
+
+.arrow-icon {
+  color: white;
+  font-size: 20px;
+}
+
+.games {
+  padding-top: 7vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.date-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+}
+
+.date-container button {
+  background-color: #1a1a1a;
+}
+
+.games-between {
+  width: 30vw;
+  text-align: left;
+}
+
+#finalist-players {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faceplayer-logo {
+  height: 10vw;
+  width: 15vw;
+  border-radius: 30%;
+}
+
+
+
+
+
+.game-details {
+  color: white;
+  font-size: large;
+}
+
+.details-main-container {
+  color: white;
+  width: 100%;
+}
+
+.opening-scors {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: solid 1px white;
+  margin-top: 5%;
+  padding-top: 5%;
+}
+
+.opening-scors .team-logo {
+  max-height: 16vmin;
+  max-width: 12vmax;
+  pointer-events: none;
+}
+
+.opening-scors .team {
+  align-items: center;
+}
+
+.opening-ps {
+  font-size: 2rem;
+}
+
+.main-info {
+  text-shadow: 3px 2px 1px red;
+  font-family: cursive;
+}
+
+
+.team-logo {
+  max-height: 10vmin;
+  max-width: 8vmax;
+  pointer-events: none;
+  align-self: center;
+}
+
+
+.score {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.scores-container {
+  width: 7rem;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.leads-ties {
+  font-weight: 400;
+  color: rgba(166, 236, 166, 0.406);
+}
+
+.scores {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.final {
+  font-weight: 1000;
+}
+
+.pos {
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.scorbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.scorbox .team {
+  width: 35%;
+  height: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-name {
+  font-weight: bolder;
+  letter-spacing: inherit;
+
+}
+
+/* .scorbox-top {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.scorbox-down {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+.scorbox-container {
+  min-width: 48%;
+  border: 1px solid white;
+  border-radius: 10%;
+  margin-top: 20px;
+}
+
+.view-details {
+  border-top: 1px solid white;
+}
+
+.details-button {
+  text-decoration: none;
+  color: white;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.details-button:hover {
+  color: green;
+}
+
+.game-numbers-container {
+  border-bottom: 1px solid white;
+}
+
+.game-numbers {
+  color: white;
+  font-size: x-large;
+  font-weight: 900;
+  margin: 0
+}
+
+
+.rounds {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 50vw;
+  margin-top: 3%;
+  margin-left: 4%;
+  padding: 15px;
+}
+
+.rounds a {
+  text-decoration: none;
+  width: 18vw;
+  height: 3vw;
+  background-color: #1a1a1a;
+  color: white;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+
+.score-details-container {
+  color: white;
+}
+
+.details-opening-scorebox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.outside-of-games {
+  width: 40%;
+  text-align: center;
+}
+
+.stats-options {
+  border-top: 1px solid white;
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.options-buttons {
+  width: 10rem;
+  height: 3rem;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.options-buttons:hover {
+  background-color: white;
+  color: #1a1a1a;
+  transition: 1s;
+}
+
+.personal-stats-container {
+  color: white;
+  margin-top: 8%;
+}
+
+.pstats-team-choice button {
+  width: 25rem;
+  height: 5rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  color: white;
+  border: solid 2px #1a1a1a;
+  border-radius: 40%;
+  cursor: pointer;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.pstats-team-choice button:hover {
+  background: white;
+  color: rgb(2, 0, 36);
+  transition: 1s;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 85%;
+  color: #1a1a1a;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+table th {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+table tr:nth-child(even) td {
+  /* background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
+  background-color: #f2f2f2;
+}
+
+table tr:hover td {
+  background-color: #ffedcc;
+}
+
+table td {
+  /* background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,97,0.29744397759103647) 100%); */
+  background: rgb(56, 19, 3);
+  background: linear-gradient(90deg, rgb(56, 19, 3) 0%, rgb(144, 23, 12) 35%, rgb(170, 146, 130) 100%);
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+
+.standing-container {
+  margin-top: 50px;
+  border-top: solid 1px white;
+}
+
+.pstats-team-choice .standings-options {
+  margin-top: 2rem;
+  width: 20rem;
+  height: 5rem;
+  font-size: 1.5rem;
+
+}
+
+.standing-thead {
+  font-size: 1rem;
+}
+
+td.standing-teams {
+  width: 11rem;
+  text-align: left;
+}
+
+.standing-w-l {
+  width: 2.5rem;
+}
+
+.standing-st {
+  width: 2.5rem;
+}
+
+.standing-table table td {
+  background: white;
+  color: #1a1a1a;
+}
+
+.standing-teams a {
+  text-decoration: none;
+  color: black;
+}
+
+.table-border {
+  border-right: solid 2px black;
+}
+
+
+.general-stats-container .general {
+  width: 55%;
+  border: solid 8px rgb(188, 107, 99);
+  border-radius: 5%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.general-stats-container .stats-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stat-border {
+  border-top: solid 1px white;
+  margin-top: 2%;
+}
+
+.stats-content div {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.progress-bar-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+div.progress-bar {
+  height: 25px;
+  width: 42%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+button#back {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+div.the-bottom {
+  margin-bottom: 2%;
+}
+
+
+.team-dets {
+  margin-top: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8%;
+  padding-right: 13%;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.star-icon-button {
+  cursor: pointer;
+  background: none;
+  width: 60px;
+  height: 60px;
+}
+
+#star-icon-button-players {
+  width: 30px;
+  height: 30px;
+}
+
+
+.yellow {
+  color: yellow;
+}
+
+.yellowPlayers {
+  color: yellow;
+}
+
+.star-icon {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+}
+
+#star-icon-players {
+  height: 15px;
+  width: 15px;
+}
+
+.star-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.team-dets img {
+  object-fit: contain;
+  width: 20rem;
+  height: 20rem;
+}
+
+.roster p {
+  color: red;
+  text-shadow: 3px 2px 1px white;
+  font-family: cursive;
+}
+
+.stats-t-name {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.stats-main-info {
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.flags {
+  font-size: 1.8rem;
+}
+
+.vertical {
+  border-right: solid 5px rgb(15, 82, 122);
+}
+
+
+#recap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#recap table {
+  width: 90%;
+}
+
+div#recap th {
+  height: 20px;
+
+}
+
+/* FORM DESİGN */
+
+.login-register-container {
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.login-register-container-nav {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+form {
+  width: 55%;
+  height: 55%;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 8%;
+  /* border: solid 7px red; */
+}
+
+.form-button {
+  width: 9rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+form h2 {
+  font-weight: bolder;
+  letter-spacing: .2rem;
+  font-size: 3rem;
+}
+
+form label {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  text-align: left;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+.span-container {
+  text-align: left;
+  width: 75%;
+}
+
+.inputs {
+  width: 75%;
+  height: 30%;
+  background-color: white;
+}
+
+.form-errors {
+  margin-bottom: 3%;
+  font-size: 1.5rem;
+}
+
+/* table favs */
+
+.table-favs  {
+  border-collapse: collapse;
+  width: 60%;
+  color: #1a1a1a;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.table-favs th {
+  background: white;
+  background: linear-gradient(90deg, white 0%, rgb(81, 81, 81) 50%, rgb(60, 59, 59) 100%);
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.table-favs tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+.table-favs tr:hover td {
+  background-color: #ffedcc;
+}
+
+.table-favs td {
+  background: rgb(81, 81, 81);
+  background: linear-gradient(90deg, rgb(81, 81, 81) 10%, rgba(135, 130, 130, 0.214) 35%, rgb(47, 46, 46) 100%);
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.table-favs img {
+  max-height: 8vmin;
+  max-width: 6vmax;
+}
+
+th#fav-ranking {
+  width: 1rem;
+}
+
+
+
+.no-fav-info {
+  margin-top: 20px;
+  color: rgb(129, 63, 63);
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: inherit;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fav-h5 {
+  color: rgb(28, 155, 28);
+  font-weight: bolder;
+  letter-spacing: inherit;
+}
+
+.toast-message {
+  font-size: 1rem;
+}
+
+.fav-buttons-container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.fav-buttons {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  border: solid 2px white;
+  padding: 2%;
+  border-radius: 20%;
+}
+
+.fav-buttons:hover {
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+  transition: 1s;
+
+}
+
+.favs-to-component {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.note-button {
+  background-color:transparent;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.form-note {
+  padding-top: 0;
+}
+
+.form-note p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.text-area {
+  width: 100%;
+  height: 6rem;
+  margin: 0 auto
+}
+
+.close-modal-container {
+  text-align: right;
+}
+
+.close-modal {
+  text-align: right;
+  position: absolute;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
