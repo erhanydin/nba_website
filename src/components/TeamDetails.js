@@ -21,6 +21,7 @@ const TeamDetails = () => {
     const [userFavs, setFavs] = useState([]);
     const [yellow, setYellow] = useState([]);
 
+
     useEffect(() => {
         Promise.all([
             fetch(`https://erhanba-71679337ef80.herokuapp.com/api/teams/${tid}`),

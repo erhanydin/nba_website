@@ -22,7 +22,6 @@ const Playoffs = (props) => {
 
 
 
-
     useEffect(() => {
         axios.all([
             axios.get(`https://erhanba-71679337ef80.herokuapp.com/api/games/${serId}`),
