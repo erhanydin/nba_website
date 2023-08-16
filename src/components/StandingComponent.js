@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TeamsEast from "./TeamsEast";
+import BestOfContainer from "./BestOfContainer";
 
 
 const StandingComponent = () => {
@@ -78,6 +79,7 @@ const StandingComponent = () => {
                         </table>
                     </div>
             }
+            
         </div>
     );
 }

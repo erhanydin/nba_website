@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, useHistory, useParams } from 'react-router-dom';
 import axios from 'axios'
 import RecapFirstTeam from './recapFirstTeam';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import {ToastContainer, toast} from 'react-toastify'
+import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 
 const Playoffs = (props) => {
@@ -19,7 +19,6 @@ const Playoffs = (props) => {
     const [userInfo, setUserInfo] = useState({})
     const [userFavs, setFavs] = useState([]);
     const [yellow, setYellow] = useState([]);
-
 
 
     useEffect(() => {
@@ -167,7 +166,9 @@ const Playoffs = (props) => {
                                 <div className='view-details'>
                                     <Link
                                         to={`/series/${series.seriesId}/${series.gameId}`}
-                                        className='details-button'>View Details
+                                        className='details-button'
+                                    >
+                                        View Details
                                     </Link>
                                 </div>
                             </div>

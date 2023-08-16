@@ -107,7 +107,7 @@ function App() {
       <Switch>
 
         <Route exact path='/'>
-          <HomeComponent />
+          <StandingComponent />
         </Route>
 
         <Route path='/playoffs/:id'>

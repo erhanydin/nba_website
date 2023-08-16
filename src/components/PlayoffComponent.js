@@ -9,6 +9,7 @@ import jimmy from '../images/1.png';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Link, Route, Switch } from "react-router-dom";
+import BestOfContainer from "./BestOfContainer";
 
 
 const PlayoffComponent = () => {
@@ -204,6 +205,8 @@ const PlayoffComponent = () => {
                     }
                 </div> */}
             </div>
+
+            <BestOfContainer />
         </div>
     );
 }
