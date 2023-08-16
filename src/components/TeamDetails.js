@@ -92,6 +92,7 @@ const TeamDetails = () => {
 
 
     const fav = userFavs.filter((fav) => fav.type === 0 && fav.type_id === team.teamId)
+    console.log(fav)
 
     return (
         JSON.stringify(team) === '{}'
@@ -106,6 +107,7 @@ const TeamDetails = () => {
                         <button
                             onClick={handleFavsForTeams}
                             className="star-icon-button"
+                            disabled={fav.length === 1 ? true : false}
                         >
                             <FontAwesomeIcon
                                 color={fav.length === 1 ? 'yellow' : 'white'}
@@ -151,6 +153,7 @@ const TeamDetails = () => {
                                                 <button
                                                     id="star-icon-button-players"
                                                     className="star-icon-button"
+                                                    disabled={userFavs.filter((fav) => fav.type === 1 && fav.type_id === player.playerId).length === 1 ? true : false}
                                                     onClick={() => {
                                                         if (!userInfo.token) {
                                                             history.push("/login")

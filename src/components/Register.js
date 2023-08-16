@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import authService from "../auth/auth-service";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import * as yup from 'yup'
 import axios from "axios";
 
@@ -157,7 +157,7 @@ const Register = (props) => {
                     <div>{formError.password}</div>
                     <div>{databaseErrors}</div>
                 </div>
-
+                <div className="account-login-info">Already have an account? <Link to="/login">Login</Link></div>
             </form>
         </div>
     );

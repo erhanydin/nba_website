@@ -101,7 +101,7 @@ const Playoffs = (props) => {
                             <p className='opening-ps'>{actualData[0].firstTeamName}</p>
                         </div>
                         <div>
-                            <button onClick={handleFavsForSeries} className='star-icon-button'>
+                            <button onClick={handleFavsForSeries} className='star-icon-button' disabled={fav.length === 1 ? true : false}>
                                 <FontAwesomeIcon color={fav.length === 1 ? 'yellow' : 'white'} className={`star-icon ${yellow}`} icon={faStar} />
                             </button>
                             <p className='opening-ps main-info'>{actualData[0].firstTeamName} vs {actualData[0].secondTeamName} Series </p>

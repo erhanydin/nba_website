@@ -112,7 +112,7 @@ const ScoreDetails = () => {
                             <p className='opening-ps'>{showData.gameId === 1 || showData.gameId === 2 || showData.gameId === 5 || showData.gameId === 7 ? showData.firstTeamName : showData.secondTeamName}</p>
                         </div>
                         <div className="outside-of-games">
-                            <button onClick={handleFavsForGames} className='star-icon-button'>
+                            <button onClick={handleFavsForGames} className='star-icon-button' disabled={fav.length === 1 ? true : false}>
                                 <FontAwesomeIcon color={fav.length === 1 ? 'yellow' : 'white'} className={`star-icon ${yellow}`} icon={faStar} />
                             </button>
                             <div className="details-opening-scorebox">
